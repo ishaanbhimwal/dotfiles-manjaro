@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# system controls with dmenu
+# original snippet - https://github.com/Stebalien/dmenu-menus/blob/master/dmenu-power
+    
+case "$(echo -e "Lock\nLogout\nRenew\nSuspend\nRestart\nShutdown" | dmenu \
+    -i -p \
+    "Power:" -l 5)" in
+        Lock) exec slock;;
+        Logout) exec pkill dwm;;
+        Renew) exec killall dwm;;
+        Suspend) exec systemctl suspend;;
+        Restart) exec systemctl reboot;;
+        Shutdown) exec systemctl poweroff;;
+esac
