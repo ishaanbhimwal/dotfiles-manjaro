@@ -61,6 +61,3 @@ alias st="curl -F 'file=@-' https://0x0.st"
 
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
-
-# dwm 
-alias build="sudo cp config.def.h config.h && sudo make install"
