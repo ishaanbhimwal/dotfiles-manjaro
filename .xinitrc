@@ -48,9 +48,6 @@ xbacklight -set 60 &
 # set wallpaper
 xwallpaper --zoom $HOME/Pictures/wallpapers/illyria-default.jpg &
 
-# start alttab
-alttab -font "xft:monospace-10" -frame "#005577" -i "16x16" -sc "0" -w "1" &
-
 # start clipboard daemon
 clipmenud &
 
@@ -68,6 +65,9 @@ redshift &
 
 # start polkit agent
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# start secret storage service
+/usr/bin/gnome-keyring-daemon --start --components=secrets &
 
 # launch dwm
 exec $HOME/scripts/dwm_start

@@ -126,6 +126,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_r,      quit,           {0} },
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("$HOME/scripts/dmenu_power") },
 	{ MODKEY|ShiftMask,             XK_t,      spawn,          SHCMD("$HOME/scripts/todo") },
+	{ Mod1Mask,             	XK_Tab,    spawn,          SHCMD("$HOME/scripts/switch") },
 	{ 0, 				XF86XK_AudioRaiseVolume,  spawn, SHCMD("pactl set-sink-volume 0 +5%") },
 	{ 0, 				XF86XK_AudioLowerVolume,  spawn, SHCMD("pactl set-sink-volume 0 -5%") },
 	{ 0, 				XF86XK_AudioMute,  	  spawn, SHCMD("pactl set-sink-mute 0 toggle") },
