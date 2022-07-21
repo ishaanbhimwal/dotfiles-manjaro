@@ -23,7 +23,7 @@ export SEP2="]"
 
 # Import the modules
 #. "$DIR/bar-functions/dwm_alarm.sh"
-. "$DIR/bar-functions/dwm_alsa.sh"
+#. "$DIR/bar-functions/dwm_alsa.sh"
 #. "$DIR/bar-functions/dwm_backlight.sh"
 . "$DIR/bar-functions/dwm_battery.sh"
 #. "$DIR/bar-functions/dwm_ccurse.sh"
@@ -37,7 +37,7 @@ export SEP2="]"
 #. "$DIR/bar-functions/dwm_mail.sh"
 #. "$DIR/bar-functions/dwm_mpc.sh"
 #. "$DIR/bar-functions/dwm_networkmanager.sh"
-#. "$DIR/bar-functions/dwm_pulse.sh"
+. "$DIR/bar-functions/dwm_pulse.sh"
 . "$DIR/bar-functions/dwm_resources.sh"
 #. "$DIR/bar-functions/dwm_spotify.sh"
 #. "$DIR/bar-functions/dwm_transmission.sh"
@@ -84,7 +84,7 @@ do
    
     upperbar="$upperbar$(dwm_resources)"
     upperbar="$upperbar$(dwm_battery)"
-    upperbar="$upperbar$(dwm_alsa)"
+    upperbar="$upperbar$(dwm_pulse)"
     upperbar="$upperbar$(dwm_date)"
 
     # Append results of each func one by one to the lowerbar string
