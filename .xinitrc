@@ -43,16 +43,13 @@ imwheel &
 numlockx on &
 
 # set brightness
-xbacklight -set 60 &
+xbacklight -set 50 &
 
 # set wallpaper
-xwallpaper --zoom $HOME/Pictures/wallpapers/illyria-default.jpg &
+xwallpaper --zoom $HOME/Pictures/wallpapers/xfce-verticals.png &
 
 # start clipboard daemon
 clipmenud &
-
-# enable battery alert
-$HOME/scripts/battery_alert &
 
 # start compositor
 picom -b &
